@@ -188,7 +188,13 @@ const Dashboard = () => {
             {completionRate}%
           </span>
           <div className="progress-bar-background">
-            <div className="progress-bar-fill" style={styles.progess}></div>
+            <div
+              className="progress-bar-fill"
+              style={{
+                width: `${completionRate}%`,
+                backgroundColor: "#28a745",
+              }}
+            ></div>
           </div>
         </div>
 
@@ -263,8 +269,4 @@ const styles = {
     color: "inherit",
   },
   completeRate: { color: "#28a745" },
-  progess: {
-    width: `${completionRate}%`,
-    backgroundColor: "#28a745",
-  },
 };
