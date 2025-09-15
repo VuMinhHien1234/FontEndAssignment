@@ -1,0 +1,162 @@
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2c3e50; 
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.topbar-left,
+.topbar-right,
+.upload-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-section h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.login-button,
+.logout-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.login-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.logout-button {
+  background-color: #e74c3c; 
+  color: #ffffff;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+
+.topbar-right {
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ecf0f1;
+}
+
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.upload-section h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.upload-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-input {
+  display: none; 
+}
+
+.custom-file-upload {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-file-upload:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.upload-button {
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71; 
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.upload-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.success-text {
+  color: #2ecc71;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar-left,
+  .topbar-right,
+  .upload-section {
+    width: 100%;
+    text-align: left;
+  }
+
+  .upload-section {
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}

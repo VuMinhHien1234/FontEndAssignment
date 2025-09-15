@@ -1,0 +1,50 @@
+
+.sidebar-user-list {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.sidebar-content-wrapper {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-add-task-container {
+  margin-bottom: 20px;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-add-task-button {
+  padding: 6px 100px;
+  background-color: #1b4593;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.sidebar-user-item {
+  margin-bottom: 20px;
+  background-color: #e6e6e6;
+  margin-left: 50px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-user-link {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}

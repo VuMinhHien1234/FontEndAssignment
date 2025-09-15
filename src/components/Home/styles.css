@@ -1,0 +1,76 @@
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.task-input-group input,
+.task-input-group select {
+  padding: 6px;
+  flex: 1 1 150px;
+  min-width: 140px;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.analyze-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.sorted-tasks {
+  margin-top: 30px;
+  background-color: #eaf6ff;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.sorted-task-item {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
